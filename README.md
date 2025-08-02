@@ -43,9 +43,48 @@ Perfect for experiments in human motion visualization, AR/VR prototyping, educat
 
 ---
 
-## 📦 Requirements
+ ##Visual Effects Engine
 
-Install the following Python dependencies:
+**🎨 Color Gradient System
+HSV to RGB conversion
 
-```bash
-pip install opencv-python mediapipe numpy matplotlib
+Smooth gradient cycling
+
+Pulsing via sine wave modulation
+
+**💡 Neon Glow Effects
+Dual-layer line drawing for glow
+
+Joint circles with bright centers
+
+Layer blending with cv2.addWeighted
+
+**🌀 Motion Trails
+Stores 8-frame trail history
+
+Fades older trails with alpha blending
+
+##3D Visualization
+Real-time 3D plot of skeleton
+
+Line + scatter points for connections
+
+Same color scheme as 2D view
+
+**🔧 Utility Functions
+get_gradient_color(t) → Time-based color generator
+
+draw_smooth_line() → Neon glowing lines
+
+draw_smooth_circle() → Smooth joint highlights
+
+**🔁 Main Loop
+Read and flip webcam frame
+
+Run pose detection
+
+Apply visual effects
+
+Update 3D skeleton every 6 frames
+
+Show result in OpenCV + Matplotlib windows
